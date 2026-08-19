@@ -8,32 +8,55 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "#090D16",
-        surface: "#0F172A",
-        surfaceHover: "#1E293B",
-        borderSubtle: "rgba(255, 255, 255, 0.08)",
-        primary: {
-          DEFAULT: "#6366F1",
-          light: "#818CF8",
-          dark: "#4F46E5",
+        canvas: {
+          dark: "#191919",
+          card: "#222222",
+          cardHover: "#2A2A2A",
+          border: "rgba(255, 255, 255, 0.08)",
         },
-        secondary: {
-          DEFAULT: "#06B6D4",
-          light: "#22D3EE",
+        coral: {
+          DEFAULT: "#FF6B50",
+          light: "#FF856E",
+          dark: "#E8553A",
+          muted: "rgba(255, 107, 80, 0.15)",
         },
-        emerald: {
-          DEFAULT: "#10B981",
-          light: "#34D399",
-        }
+        aqua: {
+          DEFAULT: "#1DE9B6",
+          light: "#64FFDA",
+        },
+        textMuted: "#7A7A7A",
+        textSecondary: "#B8B8B8",
       },
       fontFamily: {
         sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
         display: ['var(--font-display)', 'system-ui', 'sans-serif'],
       },
-      boxShadow: {
-        glass: '0 8px 32px 0 rgba(0, 0, 0, 0.37)',
-        glow: '0 0 30px rgba(99, 102, 241, 0.25)',
+      borderRadius: {
+        'sm': '4px',
+        'DEFAULT': '6px',
+        'md': '8px',
+        'lg': '12px',
+        'xl': '16px',
       },
+      boxShadow: {
+        'card': '0 10px 30px -5px rgba(0, 0, 0, 0.5)',
+        'coral-glow': '0 0 25px rgba(255, 107, 80, 0.35)',
+        'aqua-glow': '0 0 20px rgba(29, 233, 182, 0.5)',
+      },
+      keyframes: {
+        floatSlow: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-6px)' },
+        },
+        floatDelay: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-8px)' },
+        },
+      },
+      animation: {
+        'float-slow': 'floatSlow 6s ease-in-out infinite',
+        'float-delay': 'floatDelay 7s ease-in-out 1.5s infinite',
+      }
     },
   },
   plugins: [],
