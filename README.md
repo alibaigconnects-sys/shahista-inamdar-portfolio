@@ -1,34 +1,45 @@
-# Shahista Inamdar - Portfolio Website
+# Personal Portfolio Website
 
-A modern, responsive, and elegant personal portfolio website for **Shahista Inamdar**, Senior Developer based in Toronto, Ontario, Canada.
-
----
-
-## 🚀 Live Demo
-Visit the live portfolio website:
-[https://alibaigconnects-sys.github.io/shahista-inamdar-portfolio/](https://alibaigconnects-sys.github.io/shahista-inamdar-portfolio/)
+A modern, responsive, and sleek personal portfolio website for **Shahista Inamdar**, Senior Developer based in Toronto, Ontario, Canada.
 
 ---
 
-## 📋 Features
+## 🌟 Overview
 
-- **Professional Positioning:** 10+ years of software engineering experience across India and Canada.
-- **Interactive Career Timeline:** Verified career history highlighting 6 progressive roles from 2013 to present.
-- **Core Engineering Pillars:** Enterprise .NET application development, Agile team delivery, developer testing, and deployment.
-- **Community Spotlight:** Canadian tech career guidance and content creation insights.
-- **Responsive & Modern Design:** Dark luxury theme, glassmorphism, responsive navigation, and interactive contact form.
+This website showcases verified professional experience, software engineering capabilities, education, and career content:
+
+- **10+ Years Experience** across India and Canada
+- **Enterprise Software Delivery** (.NET Ecosystem & Services)
+- **Agile Collaboration** & Requirement Analysis
+- **Quality Assurance** & Test Environment Deployment
+- **Community Mentorship** & Tech Career Insights
 
 ---
 
-## 🛠️ Built With
+## 🛠️ Tech Stack
 
-- **HTML5** — Semantic, accessible web structure
-- **CSS3** — Custom design system, CSS variables, glassmorphism & responsive layouts
-- **JavaScript** — Dynamic navigation, mobile menu toggle, scroll spy & contact feedback
-- **Google Fonts** — Plus Jakarta Sans & Space Grotesk
-- **FontAwesome** — Clean vector iconography
+- **Framework:** [Next.js](https://nextjs.org/) (React 18)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Icons:** [Phosphor Icons](https://phosphoricons.com/)
+- **Typography:** Google Fonts (Plus Jakarta Sans & Space Grotesk)
+
+---
+
+## 🚀 Getting Started Locally
+
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Run local development server:**
+   ```bash
+   npm run dev
+   ```
+
+3. Open `http://localhost:3000` in your web browser.
 
 ---
 
 ## 📄 License
-All rights reserved © Shahista Inamdar.
+Private & Personal Portfolio © Shahista Inamdar.
