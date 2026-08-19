@@ -11,7 +11,6 @@ import {
   Sparkle,
   PaperPlaneTilt,
   LinkedinLogo,
-  GithubLogo,
   MapPin,
   CalendarBlank,
   ArrowUpRight,
@@ -31,7 +30,6 @@ export default function PortfolioPage() {
   const [formData, setFormData] = useState({ name: '', email: '', subject: '', message: '' });
 
   const linkedInUrl = 'https://ca.linkedin.com/in/shahista-inamdar-67606276';
-  const githubUrl = 'https://github.com/alibaigconnects-sys/shahista-inamdar-portfolio';
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -52,8 +50,12 @@ export default function PortfolioPage() {
       <header className="fixed top-0 left-0 right-0 z-50 bg-[#090D16]/85 backdrop-blur-md border-b border-white/10">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <a href="#hero" className="flex items-center gap-3 group">
-            <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 flex items-center justify-center font-display font-bold text-white shadow-glow group-hover:scale-105 transition-transform">
-              SI
+            <div className="w-9 h-9 rounded-lg overflow-hidden border border-indigo-500/30 shadow-glow group-hover:scale-105 transition-transform">
+              <img
+                src="/profile.jpg"
+                alt="Shahista Inamdar"
+                className="w-full h-full object-cover object-top"
+              />
             </div>
             <span className="font-bold tracking-tight text-white group-hover:text-indigo-300 transition-colors">
               Shahista Inamdar
@@ -72,7 +74,7 @@ export default function PortfolioPage() {
             </a>
           </nav>
 
-          {/* Social Icons & Mobile Toggle */}
+          {/* Social Icon & Mobile Toggle */}
           <div className="flex items-center gap-3">
             <a
               href={linkedInUrl}
@@ -82,15 +84,6 @@ export default function PortfolioPage() {
               title="LinkedIn Profile"
             >
               <LinkedinLogo size={20} weight="fill" />
-            </a>
-            <a
-              href={githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-9 h-9 rounded-lg bg-slate-800/80 border border-white/10 flex items-center justify-center text-slate-200 hover:bg-white hover:text-slate-900 transition-all"
-              title="GitHub Repository"
-            >
-              <GithubLogo size={20} weight="fill" />
             </a>
 
             <button
@@ -178,13 +171,19 @@ export default function PortfolioPage() {
               </div>
             </div>
 
-            {/* Right Visual Card */}
+            {/* Right Visual Card with Actual Profile Image */}
             <div className="lg:col-span-5 flex justify-center">
               <div className="w-full max-w-md glass-panel p-8 rounded-3xl border border-indigo-500/20 text-center relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-500/10 rounded-full blur-2xl pointer-events-none" />
 
-                <div className="w-24 h-24 rounded-full bg-gradient-to-tr from-indigo-600 via-purple-600 to-pink-500 mx-auto mb-5 flex items-center justify-center text-3xl font-display font-extrabold text-white shadow-glow border-2 border-white/20">
-                  SI
+                <div className="relative w-32 h-32 mx-auto mb-5">
+                  <div className="w-full h-full rounded-full overflow-hidden border-2 border-indigo-500/50 shadow-glow ring-4 ring-indigo-500/20">
+                    <img
+                      src="/profile.jpg"
+                      alt="Shahista Inamdar"
+                      className="w-full h-full object-cover object-top"
+                    />
+                  </div>
                 </div>
 
                 <h3 className="text-xl font-bold text-white mb-1">Shahista Inamdar</h3>
@@ -701,18 +700,6 @@ export default function PortfolioPage() {
                       </a>
                     </div>
                   </div>
-
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-xl bg-slate-900 border border-white/10 flex items-center justify-center text-slate-200">
-                      <GithubLogo size={20} weight="fill" />
-                    </div>
-                    <div>
-                      <div className="text-xs text-slate-400 uppercase font-semibold">GitHub Repository</div>
-                      <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="text-sm font-medium text-indigo-300 hover:text-white underline">
-                        shahista-inamdar-portfolio
-                      </a>
-                    </div>
-                  </div>
                 </div>
               </div>
 
@@ -835,9 +822,6 @@ export default function PortfolioPage() {
           <div className="flex items-center gap-4">
             <a href={linkedInUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
               LinkedIn
-            </a>
-            <a href={githubUrl} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
-              GitHub
             </a>
             <a href="#hero" className="hover:text-white transition-colors">
               Back to Top ↑
